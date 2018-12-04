@@ -1,0 +1,11 @@
+version: '3'
+services:
+  socks:
+    image: asdf404/dante
+    build: .
+    ports:
+      - 1080:1080
+    restart: always
+    environment:
+      DANTE_USER: user
+      DANTE_PASSWORD: password
